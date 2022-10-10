@@ -1,0 +1,28 @@
+#include <stdio.h>
+struct sum
+
+{
+
+  int a;
+
+  int b;
+
+};
+
+int main()
+
+{
+
+  int s1;
+
+  struct sum s;
+
+  scanf("%d%d",&s.a,&s.b);
+
+  s1=s.a+s.b;
+
+  printf("%d",s1);
+
+  return 0;
+
+}
