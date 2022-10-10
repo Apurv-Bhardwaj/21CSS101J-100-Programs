@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include<stdbool.h>
+
+bool isPowerOfTwo(int n)
+
+{
+
+  if(n==0)
+
+    return 0;
+
+  while(n!=1)
+
+  {
+
+    if(n%2!=0)
+
+      return 0;
+
+    n=n/2;
+
+  }
+
+  return 1;
+
+}
+
+      
+
+int main()
+
+{
+
+  int a,i,b;
+
+  scanf("%d",&a);
+
+  for(i=0;i<a;i++)
+
+  {
+
+    scanf("%d",&b);
+
+    isPowerOfTwo(b)?printf("1\n"):printf("0\n");
+
+  }
+
+  return 0;
+
+}
