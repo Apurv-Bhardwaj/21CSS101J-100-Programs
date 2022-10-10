@@ -1,0 +1,14 @@
+#include <iostream.h>
+main() {
+FILE *stream;
+int status, i;
+char buffer [512];
+ 
+ stream = fopen ("filename", "wb");
+ 
+ for (i = 0; i < 512 ; i++)
+ buffer[i] = i;
+ status = fwrite (buffer, 1 , 512 , stream);
+ if (status! = 512)
+ printf("write error occurred.");
+ }
