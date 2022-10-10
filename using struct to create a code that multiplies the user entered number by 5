@@ -1,0 +1,26 @@
+#include <stdio.h>
+struct multiply
+
+{
+
+  int a;
+
+}s;
+
+int main()
+
+{
+
+  int b;
+
+  struct multiply s;
+
+  scanf("%d",&s.a);
+
+  b=s.a*5;
+
+  printf("%d",b);
+
+ return 0;
+
+}
