@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+
+{
+
+  int num,first,count,last,a,b,snum;
+
+  scanf("%d",&num);
+
+  count=log10(num);
+
+  first=num/pow(10,count);
+
+  last=num%10;
+
+  a=first*(pow(10,count));
+
+  b=num%a;
+
+  num=b/10;
+
+  snum=last*(pow(10,count))+(num*10+first);
+
+  printf("%d",snum);
+
+
+
+
+ return 0;
+
+}
