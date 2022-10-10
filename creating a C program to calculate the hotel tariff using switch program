@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+
+{
+  int a,c;
+
+  float b,d;
+
+  scanf("%d%f%d",&a,&b,&c);
+
+  if(a==4 || a==5)
+  {
+
+    d=(b/5)*c;
+    printf("Rs.%.2f",d+(c*b));
+  }
+
+  else
+
+    printf("Rs.%.2f",b*c);
+ return 0;
+
+}
