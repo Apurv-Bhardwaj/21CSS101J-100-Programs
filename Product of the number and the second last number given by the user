@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+    int n;
+    printf("\n----------------------------\n");
+    printf("Enter number: ");
+    scanf("%d", &n);
+    printf("Product of last digit and second-last digit is: %d", (n % 10) * ((n % 100) / 10));
+    printf("\n----------------------------\n");
+
+}
