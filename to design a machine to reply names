@@ -1,0 +1,22 @@
+#include <stdio.h>
+struct name
+
+{
+
+   char ar[10];
+
+}s;
+
+int main()
+
+{
+
+  scanf("%s",s.ar);
+
+  printf("Hi your name is %s",s.ar);
+
+  
+
+ return 0;
+
+}
