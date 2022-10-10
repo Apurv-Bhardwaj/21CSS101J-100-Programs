@@ -1,0 +1,54 @@
+#include <stdio.h>
+int main()
+
+{
+
+  int num,c=1,ones,a,pages,num1,p;
+
+  scanf("%d",&num);
+
+  num1=num;
+
+  if(num<=9)
+
+    printf("%d",num);
+
+  else
+
+  {
+
+    while(num>9)
+
+    {
+
+      a=num%10;
+
+      c=c+1;
+
+      num=num/10;
+
+      ones=a;
+
+    }
+
+    if(ones!=0)
+
+    {
+
+     p=(num1-9);
+
+     pages=((p/2)+9);
+
+     printf("%d",pages);
+
+    }
+
+    else
+
+      printf("Impossible");
+
+  }
+
+  return 0;
+
+}
