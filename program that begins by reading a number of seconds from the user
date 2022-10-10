@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+
+{int a;
+
+ int d,m,s,h;
+
+ scanf("%d",&a);
+
+ if(a>0)
+
+ {
+
+ d=a/(24*3600);
+
+ h=(a%(24*3600))/3600;
+
+ m=(a%3600)/60;
+
+ s=(a%3600)%60;
+
+ printf("The Duration is %d days %d hours %d minutes %d seconds",d,h,m,s);
+
+ }
+
+ else
+
+ {
+
+   printf("0");
+
+ }
+
+ return 0;
+
+}
